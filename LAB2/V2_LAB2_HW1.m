@@ -30,7 +30,7 @@ ylabel('Amplitude');
 y1 = abs(fftshift(fft(x1, N)));
 
 % 建立頻率橫軸
-f_axis1 = (0:N-1)*(Fs1/N);
+f_axis1 = (-N/2:N/2-1)*(Fs1/N);
 
 % 畫頻譜
 figure(2);
@@ -58,7 +58,7 @@ ylabel('Amplitude');
 y2 = abs(fftshift(fft(x2, N)));
 
 % 建立頻率橫軸
-f_axis2 = (0:N-1)*(Fs2/N);
+f_axis2 = (-N/2:N/2-1)*(Fs2/N);
 
 % 畫頻譜
 figure(4);
